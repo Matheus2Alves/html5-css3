@@ -1,0 +1,21 @@
+@charset "UTF-8";
+
+h1 {
+    background-color:blueviolet;
+    color:aqua;
+    font-size:1.5em;
+}
+
+h2 {
+    color:aqua;
+    font-size:1.2em;
+}
+
+p {
+    color:white;
+    text-align:justify;
+    font-size:1.0em;
+}
+body {
+    background-color: bisque;
+}

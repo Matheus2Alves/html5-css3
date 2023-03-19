@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo-class</title>
+    <style>
+        .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .card {
+            background-color: bisque;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 270px;
+            width: 250px;
+            border: 2px solid black;
+            text-align: center;
+            padding: 20px;
+            margin:10px;
+        }
+
+        .card:hover {
+            background-color: red;
+        }
+
+        .card-link {
+            color: darkgreen;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .card-link:hover {
+            text-decoration: underline;
+        }
+        .card-link::after{
+            content: '♥';	
+        }
+        .card-description {
+            display: none;
+            margin: 20px 0px 0px 0;
+            padding: 20px;
+            background-color: rgb(251, 255, 0);
+            color: red;
+        }
+
+        .card:hover .card-description {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <a href="inicial.html" class="card-link">Vá para a página inicial</a>
+            <p class="card-description">Texto escondido haha</p>
+        </div>
+        <div class="card">
+            <a href="secundaria.html" class="card-link">Vá para a secundária</a>
+            <p>ola, isso aqui é um teste, vamo escrever bastante para ver como que fica o conteudo dentro da caixa, espero que fique legal e eu possa aprender muito com a ajuda do chatgpy</p>
+        </div>
+        <div class="card">
+            <a href="terciaria.html" class="card-link">Vá para a terciária</a>
+        </div>
+    </div>
+</body>
+</html>

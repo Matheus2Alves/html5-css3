@@ -1,0 +1,39 @@
+@charset "UTF-8";
+
+body{
+    font: normal 1em 'Arial','sens-sarine';
+    background-image:linear-gradient(to right,rgb(53, 9, 172),rgb(4, 8, 212));   
+}
+h1{
+    color:rgb(224, 202, 4);
+    border-radius:5px;
+    background-color: rgb(16, 2, 78);
+    box-shadow:3px 3px 13px rgb(3, 3, 51);
+    
+}
+h1#principal{
+    color:rgb(255, 255, 255);
+    text-align:center;
+    background-color: rgb(26, 2, 63);
+}
+h2{
+    color: rgb(112, 114, 7);
+    font-size:1em;
+}
+p{
+    color:white;
+    text-align:justify;
+}
+.basico{
+    color:rgb(120, 231, 92); 
+}
+.avancado{
+    color:rgb(231, 92, 92); 
+}
+.curiosidade{
+    color:rgb(168, 92, 231); 
+}
+.titulo{
+    text-align:center;
+    font-size:1.5em;
+}
