@@ -7,6 +7,12 @@
     <title>Tabelas</title>
 </head>
 <style>
+    /*TABLE HIERARCHY:
+        <table> 
+            <table row> 
+                <table header>
+                <table data>
+    */                
     table{
         border: 5px solid rgba(25, 137, 23, 0.287);
         border-collapse: collapse;
@@ -15,21 +21,29 @@
     td{
         border: 3px solid black;
         width: 80px;
+        height: 80px;
         background-color: purple;
-       
+       vertical-align: bottom;
+      text-align: left;
     }
     
     td.especial{
         background-color: aqua;
         width: 80px;
+        vertical-align: bottom;/*alinhamento vertical*/
+        text-align: center;/*alinhamento horizontal*/
     }
 
     td.plus{
         background-color: red;
+        vertical-align: top;
+        text-align: right;
     }
 
     td.less{
         background-color: yellow;
+        text-align: left;
+        vertical-align: middle;
     }
 </style>
 <body>
