@@ -28,6 +28,7 @@
         width: 500px;
         margin: auto;
         background-color: white;
+        position: relative;
     }
 
     thead, tbody, tfoot, th, td{
@@ -37,8 +38,19 @@
     }
 
     thead, tfoot{
-        background-color: rgb(192, 190, 190);
+        background-color: rgb(132, 131, 131);
         color: white;
+    }
+
+    thead{
+        position: sticky;
+        top: -2px;
+        background-color: rgb(132, 131, 131);
+    }
+
+    tbody > tr:nth-child(2n){
+        background-color: rgb(215, 215, 215);
+        /*we can use too in the pseudo class: even, 2n, 3n , 4n.., 2n-1..etc*/
     }
 
     td:hover{
