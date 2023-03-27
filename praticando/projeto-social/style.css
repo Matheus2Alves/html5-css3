@@ -5,26 +5,33 @@
     padding: 0px;
 }
 
-body{
+html, body{
     font-family: Arial, Helvetica, sans-serif;
     background: white url(imagens/backspace.jpg) center center no-repeat fixed;
     background-size: cover;
     overflow: hidden;
-    position: relative;
-}
+    height: 100vh;
+    width: 100vw;
+}   
 
 section{
-    position: absolute;
-    top: 30vh;
-    left: 90vw;
-    height: 80vh;
-    padding-right: 50px;
+    text-align: right;
+    box-sizing: border-box;
+}
+
+section img{
+    border-radius: 50%;
+    box-shadow: 2px 2px 5px black;
+    margin: 15px;
     
 }
 
-section > a> img{
-    padding: 20px;
-    border-radius: 50%;
+section img:hover{
+    transform: translate(-10px, -10px);
+    transition: transform .4s, border 1s;
+    box-shadow: 4px 4px 10px black;
+    border: 2px solid white;
+
 }
 
 iframe{
@@ -32,6 +39,5 @@ iframe{
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
-    margin-top: 300px;
     height: 450px;
 }
