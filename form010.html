@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms JS</title>
+</head>
+<body>
+    <h1>Formulário de idade</h1>
+    <form action="cadastro.php" method="post">
+        <p>
+            <label for="nas">Ano em que nasceu</label>
+            <input type="number" name="nas1" id="nas" required oninput="resu.innerHTML = Number(atu.value) - Number(nas.value)" min="1900" max="2023">
+        </p>
+
+        <p>
+            <label for="atu">Coloque o ano de hoje</label>
+            <input type="number" name="atu1" id="atu" required min="1900" max="2023" value="2023" oninput="resu.innerHTML = Number(atu.value) - Number(nas.value)">
+        </p>
+
+        <p>
+            <label for="resu1">Resultado</label>
+            <output name="resu" id="resu1">0</output>
+        </p>
+    </form>
+</body>
+</html>
