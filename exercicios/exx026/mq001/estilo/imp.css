@@ -1,0 +1,45 @@
+@charset "UTF-8";
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+html{
+    font-size: 1em;
+    font-family:'Courier New', Courier, monospace;
+}
+
+header{
+    background-color: burlywood;
+    margin: 20px;
+}
+
+header h1{
+    font-size: 2.5em;
+    text-align: center;
+}
+
+nav{
+    display: none;
+}
+
+article{
+    margin: auto;
+    width: 100vw;
+}
+
+article h2{
+    font-size: 2em;
+    background-color: gray;
+    text-align: center;
+}
+
+article > p{
+    line-height: 1.5em;
+    font-size: 1.5em;
+}
+
+article::after{
+    content: 'Este site foi impresso, para acessa-lo digite www.tamojunto.com';
+}
