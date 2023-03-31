@@ -1,3 +1,9 @@
 @charset "UTF-8";
 
 /*configuração tela deitada*/
+
+body{
+    background-image: url(../imagens/landsacepe.webp);
+    background-position: left top;
+    background-repeat: no-repeat;
+}

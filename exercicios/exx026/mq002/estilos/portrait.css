@@ -1,3 +1,9 @@
 @charset "UTF-8";
 
 /*configuração tela em pé*/
+
+body{
+    background-image: url(../imagens/portrait.jpg);
+    background-repeat: no-repeat;
+
+}
