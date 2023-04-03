@@ -19,13 +19,17 @@ header > h1{
 }
 
 header > nav{
-    background-color: tan;
+    background-color: burlywood;
 }
 
 header li{
     display: inline-block;
     padding: 10px;
     background-color: wheat;
+}
+
+nav li:hover{
+    background-color: rgb(227, 201, 168);
 }
 
 article{
