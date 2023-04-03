@@ -12,14 +12,30 @@ html{
     font-size: 1em;
 }
 
-header > h1{
+header{
     background-color: burlywood;
+}
+
+header > h1{
     text-align: center;
     font-size: 2.5em;
 }
 
-header > nav{
-    background-color: burlywood;
+span.material-icons{
+    display: block;
+    background-color: rgb(228, 179, 114);
+    text-align: center;
+    padding: 5px;
+    cursor: pointer;    
+}
+
+span.material-icons:hover{
+    background-color: black;
+    color: rgb(228, 179, 114);
+}
+
+nav{
+    display: none;
 }
 
 header li{
